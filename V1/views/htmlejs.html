@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+<% webseries.forEach(function(webseries){%>
+    <div>
+        <h2><%= webseries.title%></h2>
+        <img src="<%=webseries.image %>">
+        <span><%= webseries.caption %></span>
+        <p><%=webseries.body.substring(0,100) %>...</p>
+        <a href ="/series/<%=webseries._id%>"> Read More </a>
+    </div>
+<% }); %>
+
+
+
+
+
+
+
+
+
